@@ -1,0 +1,23 @@
+/* General */
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { background: #00796b; color: white; padding: 1rem; }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+section { padding: 2rem; min-height: 80vh; }
+h2 { color: #00796b; }
+
+/* Portfolio */
+.project-card { background: #e0f2f1; padding: 1rem; margin: 1rem 0; border-radius: 5px; }
+form input, form textarea { margin: 10px 0; padding: 8px; width: 100%; max-width: 300px; }
+form button { padding: 10px 15px; background: #00796b; color: white; border: none; cursor: pointer; }
+
+/* To-Do App */
+#todo input { padding: 8px; width: 200px; }
+#todo button { padding: 8px 12px; background: #00796b; color: white; border: none; cursor: pointer; }
+#taskList { list-style: none; padding: 0; }
+#taskList li { background: #e0f7fa; margin: 5px 0; padding: 8px; cursor: pointer; }
+#taskList li:hover { background: #b2ebf2; }
+
+/* Product Listing */
+.controls { margin-bottom: 1rem; }
+.product-card { border: 1px solid #ccc; padding: 10px; margin: 10px; border-radius: 5px; display: inline-block; width: 200px; }

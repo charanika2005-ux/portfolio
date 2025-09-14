@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Project Implementation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>My Projects</h1>
+      <ul>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#todo">To-Do App</a></li>
+        <li><a href="#products">Product Listing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>About Me</h2>
+    <p>Hi, I am a web developer skilled in HTML, CSS, and JavaScript.</p>
+
+    <h2>Projects</h2>
+    <div class="project-card">Portfolio Website</div>
+    <div class="project-card">To-Do List with LocalStorage</div>
+    <div class="project-card">Product Listing with Filters</div>
+
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Message"></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- To-Do App -->
+  <section id="todo">
+    <h2>My To-Do List</h2>
+    <input id="taskInput" type="text" placeholder="Enter a task">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Product Listing -->
+  <section id="products">
+    <h2>Product Store</h2>
+    <div class="controls">
+      <label>Category:</label>
+      <select id="categoryFilter" onchange="filterProducts()">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+      </select>
+
+      <label>Sort by Price:</label>
+      <select id="sortFilter" onchange="filterProducts()">
+        <option value="default">Default</option>
+        <option value="low-high">Low to High</option>
+        <option value="high-low">High to Low</option>
+      </select>
+    </div>
+    <div id="productList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
